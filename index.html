@@ -1072,5 +1072,29 @@
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"></script>
     <script defer src="/mobile-menu.js"></script>
+    <script>
+      const closeMenuBtn = document.querySelector(".js-close-menu");
+      const openMenuBtn = document.querySelector(".open-menu");
+      const mobileMenu = document.querySelector(".mobile-menu-nav");
+    
+      const closeMenu = () => {
+        const menuContainer = document.querySelector(".menu-container");
+        menuContainer.classList.remove("is-open");
+      };
+    
+      const toggleMenu = () => {
+        const isMenuOpen =
+          openMenuBtn.getAttribute("aria-expanded") === "true" || false;
+        openMenuBtn.setAttribute("aria-expanded", !isMenuOpen);
+        mobileMenu.classList.toggle("is-open");
+    
+        // bodyScrollLock method should be defined here or removed if not used
+        // Example: const scrollLockMethod = !isMenuOpen ? "disableBodyScroll" : "enableBodyScroll";
+        // bodyScrollLock[scrollLockMethod](document.body);
+      };
+    
+      openMenuBtn.addEventListener("click", toggleMenu);
+      closeMenuBtn.addEventListener("click", closeMenu);
+    </script>
   </body>
 </html>

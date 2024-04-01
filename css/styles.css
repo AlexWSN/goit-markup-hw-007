@@ -151,7 +151,6 @@ body {
 }
 
 .menu-container {
-  position: fixed;
 
   width: 50vw;
   height: 50vh;
@@ -1358,10 +1357,20 @@ section button {
   fill: rgb(123, 123, 127);
   stroke: rgb(134, 134, 139);
 }
+/* Stiluri pentru imaginile SVG în secțiunea "regularcustomers" */
+#regularcustomers .svg-container {
+  width: 100%;
+  height: auto;
+}
 
-/* svg {
-  margin: 20px;
-} */
+/* Stiluri pentru ecranele cu lățime mai mică sau egală cu 768px (exemplu: dispozitive mobile) */
+@media (max-width: 768px) {
+  #regularcustomers .svg-container {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
 
 footer {
   background-color: #2f303a;
