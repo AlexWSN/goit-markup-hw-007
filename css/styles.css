@@ -108,7 +108,7 @@ body {
 
 @media screen and (min-resolution: 2dppx) {
   .navbar-nav {
-    background-image: url("images"); /* Specificați calea către imagine */
+    background-image: url("/images/herobackgroundimage.jpg"); /* Specificați calea către imagine */
   }
 }
 
@@ -151,7 +151,6 @@ body {
 }
 
 .menu-container {
-
   width: 50vw;
   height: 50vh;
   background-color: #e5e6ee;
