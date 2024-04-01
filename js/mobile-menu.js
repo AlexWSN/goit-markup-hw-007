@@ -2,6 +2,18 @@
   const mobileMenu = document.querySelector(".js-menu-container");
   const openMenuBtn = document.querySelector(".js-open-menu");
   const closeMenuBtn = document.querySelector(".js-close-menu");
+  (() => {
+    const closeMenuBtn = document.querySelector(".js-close-menu");
+  
+    // Funcția pentru închiderea meniului
+    const closeMenu = () => {
+      const menuContainer = document.querySelector(".menu-container");
+      menuContainer.classList.remove("is-open");
+    };
+  
+    // Adăugăm evenimentul de clic pe butonul de închidere
+    closeMenuBtn.addEventListener("click", closeMenu);
+  })();
 
   const toggleMenu = () => {
     const isMenuOpen =

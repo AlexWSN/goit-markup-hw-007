@@ -1,3 +1,5 @@
+/* text/css */
+
 .webstudio {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -103,6 +105,7 @@ body {
     overflow-x: hidden;
   }
 }
+
 @media screen and (min-resolution: 2dppx) {
   .navbar-nav {
     background-image: url("images"); /* Specificați calea către imagine */
@@ -149,15 +152,12 @@ body {
 
 .menu-container {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  padding: 32px;
-  background-color: #3f51b5;
-  z-index: 999;
+ 
 
-  transform: translateX(100%);
+  width: 50vw;
+  height: 50vh;
+  background-color: #e5e6ee;
+  z-index: 999;
   transition: transform 250ms ease-in-out;
 }
 
@@ -1153,6 +1153,7 @@ input:-ms-input-placeholder {
 }
 
 /* Stiluri meniul mobil */
+
 .mobile-menu {
   display: flex;
   justify-content: space-between;
@@ -1167,7 +1168,7 @@ input:-ms-input-placeholder {
 }
 
 .mobile-menu-icon {
-  display: block;
+  display: flex;
   width: 30px;
   height: 2px;
   background-color: #000;
